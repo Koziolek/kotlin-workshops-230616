@@ -1,4 +1,4 @@
-package com.luxoft.football
+package com.luxoft.basic
 
 /* Determination of the day of the week
 
