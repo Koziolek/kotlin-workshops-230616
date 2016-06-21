@@ -11,7 +11,7 @@ package com.luxoft.clsint
  *
  * Normal
  * Owner is Person (address, city, phone, [pets])
- * Pet is Named (birthDate, type, owner)
+ * Pet is Named (birthDate, type, owner, [visits])
  * Vet is Person (specialties)
  * Visit (date, description, pet)
  */
