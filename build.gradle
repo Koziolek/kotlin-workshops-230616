@@ -8,6 +8,7 @@
  */
 
 apply plugin: 'java'
+apply plugin: 'java'
 
 repositories {
     jcenter()
@@ -19,9 +20,10 @@ repositories {
 
 }
 
+
 buildscript {
-    ext.kotlin_version = '1.0.2'
     ext.spek_version = '1.0.25'
+    ext.kotlin_version = '1.0.2'
 
     repositories {
         mavenCentral()
@@ -36,8 +38,9 @@ dependencies {
     compile 'org.slf4j:slf4j-api:1.7.21'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile group: 'com.google.guava', name: 'guava', version: '19.0'
-    testCompile 'org.jetbrains.spek:spek::$spek_version'
+    testCompile "org.jetbrains.spek:spek:$spek_version"
     testCompile 'junit:junit:4.12'
+    testCompile 'org.easytesting:fest-assert:1.4'
 }
 
 apply plugin: "kotlin"
