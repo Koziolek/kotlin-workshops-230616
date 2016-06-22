@@ -7,3 +7,12 @@ package com.luxoft.operators
  * # for Pet operator plus to add Visit
  *
  */
+//operator fun Owner.plus(pet: Pet): Owner {
+//    this.pets.add(pet)
+//    return this
+//}
+//
+//operator fun Pet.plus(visit: Visit): Pet {
+//    this.visits.add(visit)
+//    return this
+//}
