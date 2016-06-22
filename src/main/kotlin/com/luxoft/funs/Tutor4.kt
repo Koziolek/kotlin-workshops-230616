@@ -8,3 +8,15 @@ package com.luxoft.funs
  * # for each part we calculate area using mean
  * # we sum up areas
  */
+
+fun integral(parts: Int, start: Double, end: Double, f: (Double) -> Double): Double {
+    val eps = (end - start) / parts
+
+    var sum = 0.0
+
+    for (i in 0..(parts - 1)) {
+        sum += eps * (f(start + eps * i) + f(start + eps * (i + 1))) / 2
+    }
+
+    return sum
+}
