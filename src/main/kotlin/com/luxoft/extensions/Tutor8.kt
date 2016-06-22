@@ -1,5 +1,7 @@
 package com.luxoft.extensions
 
+import java.time.LocalDate
+
 /**
  * Create report class that will be print visits.
  *
@@ -19,3 +21,28 @@ package com.luxoft.extensions
  *      ]
  * }
  */
+fun asJson(a: Any?): String? {
+
+//    fun PetType.asJson():String{
+//        return """{
+//                "name": "$name"
+//            }
+//        """
+//    }
+//
+//    fun Pet.asJson():String{
+//        return """
+//            {
+//                "date": $birthDate,
+//                "type": ${asJson(type)}
+//            }
+//        """
+//    }
+//
+    return when(a){
+//        is Pet -> a.asJson()
+//        is PetType -> a.asJson()
+        else -> ""
+    }
+}
+
