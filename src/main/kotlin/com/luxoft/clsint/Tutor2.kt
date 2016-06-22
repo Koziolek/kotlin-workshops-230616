@@ -26,9 +26,9 @@ class PetType(name: String) : Named(name)
 
 class Specialty(name: String) : Named(name)
 
-class Owner(firstName: String, lastName: String, var address: String, var city: String, var phone: String, val pets: List<Pet> = mutableListOf()) : Person(firstName, lastName)
+class Owner(firstName: String, lastName: String, var address: String, var city: String, var phone: String, val pets: MutableList<Pet> = mutableListOf()) : Person(firstName, lastName)
 
-class Pet(name: String, val birthDate: LocalDate, val type: PetType, var owner: Owner, val visits: List<Visit> = mutableListOf()) : Named(name)
+class Pet(name: String, val birthDate: LocalDate, val type: PetType, var owner: Owner, val visits: MutableList<Visit> = mutableListOf()) : Named(name)
 
 class Visit(val birthDate: LocalDate, val description: String, val pet: Pet)
 
