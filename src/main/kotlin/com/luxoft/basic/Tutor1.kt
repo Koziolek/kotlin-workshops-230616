@@ -12,3 +12,15 @@ package com.luxoft.basic
  * ### b is b minus a
  * # return a
  */
+
+fun gcd(a: Int, b: Int): Int {
+    var ax = a;
+    var bx = b;
+    while (ax != bx) {
+        if (ax > bx)
+            ax -= bx
+        else
+            bx -= ax
+    }
+    return a
+}
