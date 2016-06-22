@@ -36,3 +36,11 @@ int main(void) {
 val t: Array<Int> = arrayOf(0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4);
 val days: Array<String> = arrayOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
 
+fun ts(y: Int, m: Int, d: Int): Int {
+    var ly = y;
+    when (m) {
+        1, 2 -> ly--
+        else -> ly
+    }
+    return (ly + ly / 4 - ly / 100 + ly / 400 + t[m - 1] + d) % 7;
+}
