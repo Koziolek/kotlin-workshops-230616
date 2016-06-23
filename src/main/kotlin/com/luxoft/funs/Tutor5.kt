@@ -10,7 +10,7 @@ fun fact(i: Long): Long {
 
     tailrec fun fact(acc: Long, n: Long): Long {
         return when (n) {
-            0L -> 1L
+            0L -> acc
             else -> fact(acc * n, n - 1)
         }
     }
