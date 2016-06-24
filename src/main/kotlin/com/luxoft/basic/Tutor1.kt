@@ -22,5 +22,5 @@ fun gcd(a: Int, b: Int): Int {
         else
             bx -= ax
     }
-    return a
+    return ax
 }
